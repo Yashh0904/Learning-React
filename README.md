@@ -19,3 +19,24 @@
 * HTTPs
 * Tree Shaking - remove unused code
 * Different dev and prod bundles
+
+#High Level Idea
+
+##COMPONENTS
+-Header
+  -Logo
+  -Nav Items
+-Body
+  -Search
+  -Restaurant Container
+    -Restaurant Cards
+    -Img
+    -Name
+    -Rating
+    -Cusine
+    -ETA
+
+-Footer
+  -Copyright
+  -Linkes
+  -Contact
