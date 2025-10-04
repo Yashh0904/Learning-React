@@ -1,2046 +1,1669 @@
-const resList = [
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "121603",
-      name: "Kannur Food Point",
-      uuid: "51983905-e698-4e31-b0d7-e376eca56320",
-      city: "1",
-      area: "Tavarekere",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "bmwn4n4bn6n1tcpc8x2h",
-      cuisines: ["Kerala", "Chinese"],
-      tags: [],
-      costForTwo: 30000,
-      costForTwoString: "₹300 FOR TWO",
-      deliveryTime: 24,
-      minDeliveryTime: 24,
-      maxDeliveryTime: 24,
-      slaString: "24 MINS",
-      lastMileTravel: 3,
-      slugs: {
-        restaurant: "kannur-food-point-btm",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "6/21,9TH CROSS ,1ST MAIN, VENKATESHWARA LAYOUT,SG PALYA, BENGALURU, - 560093",
-      locality: "SG Palya",
-      parentId: 20974,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "50% off",
-        shortDescriptionList: [
-          {
-            meta: "50% off on all orders",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "50% off on all orders",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "50% OFF",
-        shortDescriptionList: [
-          {
-            meta: "",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "50% off on all orders",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      ribbon: [
-        {
-          type: "PROMOTED",
+export const resList = {
+  restaurants: [
+    {
+      info: {
+        id: "89918",
+        name: "Pizza Hut",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/9/1/d156d462-8cf7-4738-84a6-f47f52714e19_89918.JPG",
+        locality: "Vvip Style Mall",
+        areaName: "Raj Nagar",
+        costForTwo: "₹350 for two",
+        cuisines: ["Pizzas"],
+        avgRating: 4.3,
+        parentId: "721",
+        avgRatingString: "4.3",
+        totalRatingsString: "5.8K+",
+        sla: {
+          deliveryTime: 28,
+          lastMileTravel: 1.2,
+          serviceability: "SERVICEABLE",
+          slaString: "25-30 mins",
+          lastMileTravelString: "1.2 km",
+          iconType: "ICON_TYPE_EMPTY",
         },
-      ],
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 3700,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 3700,
-        message: "",
-        title: "Delivery Charge",
-        amount: "3700",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "cid=6274849~p=1~eid=00000187-2c1c-96f0-0062-eea200b00103",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "3 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "121603",
-        deliveryTime: 24,
-        minDeliveryTime: 24,
-        maxDeliveryTime: 24,
-        lastMileTravel: 3,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: true,
-      avgRating: "3.9",
-      totalRatings: 10000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "229",
-      name: "Meghana Foods",
-      uuid: "4fdd19e2-5d0f-4bde-9c7f-dc3e8d36021f",
-      city: "1",
-      area: "Koramangala",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "xqwpuhgnsaf18te7zvtv",
-      cuisines: [
-        "Biryani",
-        "Andhra",
-        "South Indian",
-        "North Indian",
-        "Chinese",
-        "Seafood",
-      ],
-      tags: [],
-      costForTwo: 50000,
-      costForTwoString: "₹500 FOR TWO",
-      deliveryTime: 16,
-      minDeliveryTime: 16,
-      maxDeliveryTime: 16,
-      slaString: "16 MINS",
-      lastMileTravel: 1.399999976158142,
-      slugs: {
-        restaurant: "meghana-foods-5th-block-koramangala",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "124, Near Jyothi Nivas College, 1st Cross, KHB Colony, Koramangala 5th Block, Bangalore",
-      locality: "5th Block",
-      parentId: 635,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 2900,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 2900,
-        message: "",
-        title: "Delivery Charge",
-        amount: "2900",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "1.3 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "229",
-        deliveryTime: 16,
-        minDeliveryTime: 16,
-        maxDeliveryTime: 16,
-        lastMileTravel: 1.399999976158142,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: false,
-      avgRating: "4.4",
-      totalRatings: 10000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "428",
-      name: "Biryani Pot",
-      uuid: "6db20a8b-dd85-4148-b750-107169f7f826",
-      city: "1",
-      area: "Btm Layout",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "mdipoyzfzsa7n7igskht",
-      cuisines: ["North Indian", "Biryani"],
-      tags: [],
-      costForTwo: 50000,
-      costForTwoString: "₹500 FOR TWO",
-      deliveryTime: 19,
-      minDeliveryTime: 19,
-      maxDeliveryTime: 19,
-      slaString: "19 MINS",
-      lastMileTravel: 1.899999976158142,
-      slugs: {
-        restaurant: "biryani-pot-madiwala-junction-btm",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address: "14th  Cross, 4th link Road Maruthi Nagar Madiwala Bangalore 68",
-      locality: "Maruti Nagar",
-      parentId: 21798,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "20% off",
-        shortDescriptionList: [
-          {
-            meta: "20% off | Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "20% off up to ₹50 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "20% OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "20% off up to ₹50 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 2900,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 2900,
-        message: "",
-        title: "Delivery Charge",
-        amount: "2900",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "1.8 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "428",
-        deliveryTime: 19,
-        minDeliveryTime: 19,
-        maxDeliveryTime: 19,
-        lastMileTravel: 1.899999976158142,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: false,
-      avgRating: "3.9",
-      totalRatings: 10000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "223",
-      name: "Truffles",
-      uuid: "8250cc38-4752-4f42-928b-4da5f01e5cbe",
-      city: "1",
-      area: "Koramangala",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "cd832b6167eb9f88aeb1ccdebf38d942",
-      cuisines: ["American", "Continental", "Desserts", "Italian"],
-      tags: [],
-      costForTwo: 45000,
-      costForTwoString: "₹450 FOR TWO",
-      deliveryTime: 30,
-      minDeliveryTime: 30,
-      maxDeliveryTime: 30,
-      slaString: "30 MINS",
-      lastMileTravel: 1.600000023841858,
-      slugs: {
-        restaurant: "truffles-ice-spice-5th-block-koramangala",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "93/A, Appek Building, 'A' Wing,  4th 'B' Cross,  Koramangala Industrial Layout, 5th Block, Koramangala, Bangalore - 560 095",
-      locality: "5th Block",
-      parentId: 218065,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "40% off",
-        shortDescriptionList: [
-          {
-            meta: "40% off | Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "40% off up to ₹80 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "40% OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "40% off up to ₹80 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      ribbon: [
-        {
-          type: "PROMOTED",
+        availability: {
+          nextCloseTime: "2025-10-03 03:00:00",
+          opened: true,
         },
-      ],
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 2900,
-            message: "",
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {},
+            textBased: {},
+            textExtendedBadges: {},
           },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 2900,
-        message: "",
-        title: "Delivery Charge",
-        amount: "2900",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "cid=6275692~p=4~eid=00000187-2c1c-96f0-0062-eea300b00430",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "1.6 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "223",
-        deliveryTime: 30,
-        minDeliveryTime: 30,
-        maxDeliveryTime: 30,
-        lastMileTravel: 1.600000023841858,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: true,
-      avgRating: "4.4",
-      totalRatings: 10000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "425",
-      name: "Hotel Empire",
-      uuid: "c0c37758-2e83-4429-aad6-eb94debb48f5",
-      city: "1",
-      area: "Koramangala",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "un4omn7rcunkmlw6vikr",
-      cuisines: ["North Indian", "Kebabs", "Biryani"],
-      tags: [],
-      costForTwo: 45000,
-      costForTwoString: "₹450 FOR TWO",
-      deliveryTime: 23,
-      minDeliveryTime: 23,
-      maxDeliveryTime: 23,
-      slaString: "23 MINS",
-      lastMileTravel: 1.2999999523162842,
-      slugs: {
-        restaurant: "hotel-empire-5th-block-koramangala",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "103, Industrial Area, 5th Block, Near Jyothi Nivas College, Koramangala 5th Block, Bangalore",
-      locality: "Koramangala",
-      parentId: 475,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "10% off",
-        shortDescriptionList: [
-          {
-            meta: "10% off | Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "10% off up to ₹40 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "10% OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "10% off up to ₹40 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 2900,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 2900,
-        message: "",
-        title: "Delivery Charge",
-        amount: "2900",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "1.2 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "425",
-        deliveryTime: 23,
-        minDeliveryTime: 23,
-        maxDeliveryTime: 23,
-        lastMileTravel: 1.2999999523162842,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: false,
-      avgRating: "4.1",
-      totalRatings: 10000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "201224",
-      name: "Asha tiffins",
-      uuid: "e32381cf-6468-4c10-9bad-47fa08e898a8",
-      city: "1",
-      area: "HSR Layout",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "n15vckntsiboiod3gpco",
-      cuisines: ["Indian", "South Indian", "Beverages"],
-      tags: [],
-      costForTwo: 20000,
-      costForTwoString: "₹200 FOR TWO",
-      deliveryTime: 26,
-      minDeliveryTime: 26,
-      maxDeliveryTime: 26,
-      slaString: "26 MINS",
-      lastMileTravel: 4,
-      slugs: {
-        restaurant: "asha-tiffins-hsr-hsr-2",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "Asha Tiffins, 5th Main Road, Sector 7, HSR Layout, Bengaluru, Karnataka, India",
-      locality: "7th Sector",
-      parentId: 236243,
-      unserviceable: false,
-      veg: true,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "30% off",
-        shortDescriptionList: [
-          {
-            meta: "30% off | Use TRYNEW-XL",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "30% off upto ₹80 | Use TRYNEW-XL",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "30% OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use TRYNEW-XL",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "30% off upto ₹80 | Use TRYNEW-XL",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      ribbon: [
-        {
-          type: "PROMOTED",
         },
-      ],
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 3700,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 3700,
-        message: "",
-        title: "Delivery Charge",
-        amount: "3700",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "cid=6196512~p=7~eid=00000187-2c1c-96f0-0062-eea400b00725",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "4 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "201224",
-        deliveryTime: 26,
-        minDeliveryTime: 26,
-        maxDeliveryTime: 26,
-        lastMileTravel: 4,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: true,
-      avgRating: "4.4",
-      totalRatings: 10000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "59593",
-      name: "Al Daaz",
-      uuid: "c189b92c-d842-4595-9a1f-ff85bd67bc2a",
-      city: "1",
-      area: "Hsr Layout",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "rxsvhvcdip9dbfdijzk9",
-      cuisines: [
-        "American",
-        "Arabian",
-        "Chinese",
-        "Desserts",
-        "Mughlai",
-        "North Indian",
-      ],
-      tags: [],
-      costForTwo: 40000,
-      costForTwoString: "₹400 FOR TWO",
-      deliveryTime: 36,
-      minDeliveryTime: 36,
-      maxDeliveryTime: 36,
-      slaString: "36 MINS",
-      lastMileTravel: 4.5,
-      slugs: {
-        restaurant: "al-daaz-hsr-hsr",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address: "#64 & 65, 27th Main Rd, 1st Sector HSR Layout - 560102",
-      locality: "HSR",
-      parentId: 21640,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 3700,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 3700,
-        message: "",
-        title: "Delivery Charge",
-        amount: "3700",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "4.5 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "59593",
-        deliveryTime: 36,
-        minDeliveryTime: 36,
-        maxDeliveryTime: 36,
-        lastMileTravel: 4.5,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: false,
-      avgRating: "4.3",
-      totalRatings: 10000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "56589",
-      name: "Roti-Wala",
-      uuid: "257a0889-b243-4252-b84a-6c9f1760d58f",
-      city: "1",
-      area: "BTM Layout",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "ptetuqkrhmpd8tiqiztg",
-      cuisines: [
-        "North Indian",
-        "Home Food",
-        "Thalis",
-        "Chinese",
-        "Punjabi",
-        "South Indian",
-        "Ice Cream",
-      ],
-      tags: [],
-      costForTwo: 20000,
-      costForTwoString: "₹200 FOR TWO",
-      deliveryTime: 37,
-      minDeliveryTime: 37,
-      maxDeliveryTime: 37,
-      slaString: "37 MINS",
-      lastMileTravel: 4,
-      slugs: {
-        restaurant: "roti-wala-lavelle-road-central-bangalore",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address: "#239, 7TH Cross, Btm Stage 2. NS Palya, 560076",
-      locality: "2nd Stage",
-      parentId: 415860,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "40% off",
-        shortDescriptionList: [
-          {
-            meta: "40% off | Use GUILTFREE",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "40% off up to ₹100 | Use code GUILTFREE",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "40% OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use GUILTFREE",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "40% off up to ₹100 | Use code GUILTFREE",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 3700,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 3700,
-        message: "",
-        title: "Delivery Charge",
-        amount: "3700",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "4 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "56589",
-        deliveryTime: 37,
-        minDeliveryTime: 37,
-        maxDeliveryTime: 37,
-        lastMileTravel: 4,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: false,
-      avgRating: "4.2",
-      totalRatings: 10000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "560153",
-      name: "Rice Bowl",
-      uuid: "b5652b7d-5df8-4be5-8fe9-27648b668e79",
-      city: "1",
-      area: "Koramangala",
-      totalRatingsString: "1000+ ratings",
-      cloudinaryImageId: "z2ahvclpmdv6lekyth39",
-      cuisines: ["North Indian", "South Indian"],
-      tags: [],
-      costForTwo: 30000,
-      costForTwoString: "₹300 FOR TWO",
-      deliveryTime: 22,
-      minDeliveryTime: 22,
-      maxDeliveryTime: 22,
-      slaString: "22 MINS",
-      lastMileTravel: 2.5,
-      slugs: {
-        restaurant: "rice-bowl-koramangala-koramangala-2",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "42A, Old House List No 148/11, Katha No 296, BBMP PID No 68-327-98/1, Jakkasandra Village, Sarjapur Main Road, Bengaluru -, BTM Layout , B.B.M.P South, Karnataka - 560034",
-      locality: "Jakkasandra",
-      parentId: 169302,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "FLAT125 off",
-        shortDescriptionList: [
-          {
-            meta: "FLAT125 off | Use FLATDEAL",
-            discountType: "Flat",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "FLAT125 off | Use FLATDEAL",
-            discountType: "Flat",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "₹125 OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use FLATDEAL",
-            discountType: "Flat",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "FLAT125 off | Use FLATDEAL",
-            discountType: "Flat",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      ribbon: [
-        {
-          type: "PROMOTED",
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹99",
         },
-      ],
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 2900,
-            message: "",
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
           },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 2900,
-        message: "",
-        title: "Delivery Charge",
-        amount: "2900",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "cid=6081264~p=10~eid=00000187-2c1c-96f0-0062-eea500b00a3d",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "2.5 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "560153",
-        deliveryTime: 22,
-        minDeliveryTime: 22,
-        maxDeliveryTime: 22,
-        lastMileTravel: 2.5,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: true,
-      avgRating: "4.1",
-      totalRatings: 1000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "337335",
-      name: "Kannur food kitchen",
-      uuid: "c70b61bc-0f68-4e24-996b-749fbf295c35",
-      city: "1",
-      area: "BTM Layout",
-      totalRatingsString: "5000+ ratings",
-      cloudinaryImageId: "a27weqanhnszqiuzsoik",
-      cuisines: ["Kerala", "Biryani", "Beverages"],
-      tags: [],
-      costForTwo: 20000,
-      costForTwoString: "₹200 FOR TWO",
-      deliveryTime: 24,
-      minDeliveryTime: 24,
-      maxDeliveryTime: 24,
-      slaString: "24 MINS",
-      lastMileTravel: 2.5,
-      slugs: {
-        restaurant: "kannur-food-kitchen-btm-btm",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "kannur food point, Chocolate Factory Road, Tavarekere, Cashier Layout, 1st Stage, BTM Layout, thavrakharea, Karnataka, India",
-      locality: "1st  Stage",
-      parentId: 114756,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "50% off",
-        shortDescriptionList: [
-          {
-            meta: "50% off on all orders",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-          {
-            meta: "Free Limejuice on orders above ₹499",
-            discountType: "Freebie",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "50% off on all orders",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-          {
-            meta: "Free Limejuice on orders above ₹499",
-            discountType: "Freebie",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "50% OFF",
-        shortDescriptionList: [
-          {
-            meta: "",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "50% off on all orders",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-          {
-            meta: "Free Limejuice on orders above ₹499",
-            discountType: "Freebie",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 2900,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 2900,
-        message: "",
-        title: "Delivery Charge",
-        amount: "2900",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "2.5 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "337335",
-        deliveryTime: 24,
-        minDeliveryTime: 24,
-        maxDeliveryTime: 24,
-        lastMileTravel: 2.5,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: false,
-      avgRating: "3.8",
-      totalRatings: 5000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "601",
-      name: "Litti Twist",
-      uuid: "e7dcc8d7-fea9-4312-8c4e-7a6516a026db",
-      city: "1",
-      area: "Btm Layout",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "zyahkuhlgnxp3prkvttv",
-      cuisines: ["North Indian"],
-      tags: [],
-      costForTwo: 25000,
-      costForTwoString: "₹250 FOR TWO",
-      deliveryTime: 28,
-      minDeliveryTime: 28,
-      maxDeliveryTime: 28,
-      slaString: "28 MINS",
-      lastMileTravel: 4.5,
-      slugs: {
-        restaurant: "litti-twist-2nd-stage-btm",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "#5, 6th cross, 1st Main, Bannerghatta Main Rd, NS Palya, Stage 2, Bengaluru, Karnataka 560076",
-      locality: "2nd Stage",
-      parentId: 3455,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "50% off",
-        shortDescriptionList: [
-          {
-            meta: "50% off | Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "50% off up to ₹100 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "50% OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "50% off up to ₹100 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      ribbon: [
-        {
-          type: "PROMOTED",
         },
-      ],
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 3700,
-            message: "",
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
           },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 3700,
-        message: "",
-        title: "Delivery Charge",
-        amount: "3700",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "cid=6276197~p=13~eid=00000187-2c1c-96f0-0062-eea600b00d24",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "4.5 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "601",
-        deliveryTime: 28,
-        minDeliveryTime: 28,
-        maxDeliveryTime: 28,
-        lastMileTravel: 4.5,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: true,
-      avgRating: "4.2",
-      totalRatings: 10000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "256957",
-      name: "Shanmukha Restaurant",
-      uuid: "c1972fbf-2e19-42d6-ac49-54f412f78d86",
-      city: "1",
-      area: "Jayanagar",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "c5howge9hbdor7uqf949",
-      cuisines: [
-        "Biryani",
-        "Hyderabadi",
-        "Andhra",
-        "North Indian",
-        "South Indian",
-        "Chinese",
-        "Tandoor",
-        "Seafood",
-        "Beverages",
-      ],
-      tags: [],
-      costForTwo: 30000,
-      costForTwoString: "₹300 FOR TWO",
-      deliveryTime: 36,
-      minDeliveryTime: 36,
-      maxDeliveryTime: 36,
-      slaString: "36 MINS",
-      lastMileTravel: 5,
-      slugs: {
-        restaurant: "shanmukha-restaurant-jayanagar-jayanagar",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "1313, Near Bangalore Central Mall, 25th Main, 9th Block, Jayanagar, Bengaluru, Karnataka 560069, India",
-      locality: "9th Block",
-      parentId: 9954,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "50% off",
-        shortDescriptionList: [
-          {
-            meta: "50% off | Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "50% off up to ₹100 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "50% OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "50% off up to ₹100 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 4900,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 4900,
-        message: "",
-        title: "Delivery Charge",
-        amount: "4900",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "5 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "256957",
-        deliveryTime: 36,
-        minDeliveryTime: 36,
-        maxDeliveryTime: 36,
-        lastMileTravel: 5,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: false,
-      avgRating: "4.1",
-      totalRatings: 10000,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "642459",
-      name: "Malnad Donne Biryani MDB",
-      uuid: "4ae022a0-9296-40ac-8ea9-3e764200e6a5",
-      city: "1",
-      area: "Jayanagar",
-      totalRatingsString: "50+ ratings",
-      cloudinaryImageId: "tjw67zgzfehxgfo1vio2",
-      cuisines: ["Biryani", "South Indian", "Kebabs"],
-      tags: [],
-      costForTwo: 25000,
-      costForTwoString: "₹250 FOR TWO",
-      deliveryTime: 36,
-      minDeliveryTime: 36,
-      maxDeliveryTime: 36,
-      slaString: "36 MINS",
-      lastMileTravel: 5,
-      slugs: {
-        restaurant: "malnad-donne-biryani-mdb-jayanagar-jayanagar",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "1384, 32nd E Cross , near Axis bank, opp sanjay gandhi university. 4th T Block , Jayanagar, Bengaluru, Karnataka 560041",
-      locality: "T Block",
-      parentId: 130946,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "40% off",
-        shortDescriptionList: [
-          {
-            meta: "40% off | Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "40% off up to ₹80 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "40% OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "40% off up to ₹80 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 4900,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 4900,
-        message: "",
-        title: "Delivery Charge",
-        amount: "4900",
-        icon: "",
-      },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
-      },
-      longDistanceEnabled: 1,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "5 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "642459",
-        deliveryTime: 36,
-        minDeliveryTime: 36,
-        maxDeliveryTime: 36,
-        lastMileTravel: 5,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "IT_IS_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: false,
-      avgRating: "3.9",
-      totalRatings: 50,
-      new: false,
-    },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "27643",
-      name: "Ultimate Parathas",
-      uuid: "925340c8-7945-4cdf-894b-01a90f5445a2",
-      city: "1",
-      area: "Btm Layout",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "m0bjo1ds8l6o4civx6ek",
-      cuisines: ["Bihari", "North Indian", "Desserts"],
-      tags: [],
-      costForTwo: 25000,
-      costForTwoString: "₹250 FOR TWO",
-      deliveryTime: 29,
-      minDeliveryTime: 29,
-      maxDeliveryTime: 29,
-      slaString: "29 MINS",
-      lastMileTravel: 4.5,
-      slugs: {
-        restaurant: "litti-twist-koramangala-koramangala",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "#5, 6th cross, 1st Main, Bannerghatta Main Rd, NS Palya, Stage 2, Bengaluru, Karnataka 560076",
-      locality: "2nd Stage",
-      parentId: 21591,
-      unserviceable: false,
-      veg: false,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "50% off",
-        shortDescriptionList: [
-          {
-            meta: "50% off | Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "50% off up to ₹100 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "50% OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        descriptionList: [
-          {
-            meta: "50% off up to ₹100 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      ribbon: [
-        {
-          type: "PROMOTED",
         },
-      ],
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 3700,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 3700,
-        message: "",
-        title: "Delivery Charge",
-        amount: "3700",
-        icon: "",
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
       },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
       },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "cid=6276390~p=16~eid=00000187-2c1c-96f0-0062-eea700b01075",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
+      cta: {
+        link: "https://www.swiggy.com/city/noida/pizza-hut-vvip-style-mall-raj-nagar-rest89918",
+        type: "WEBLINK",
       },
-      lastMileTravelString: "4.5 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "27643",
-        deliveryTime: 29,
-        minDeliveryTime: 29,
-        maxDeliveryTime: 29,
-        lastMileTravel: 4.5,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: true,
-      avgRating: "4.2",
-      totalRatings: 10000,
-      new: false,
     },
-    subtype: "basic",
-  },
-  {
-    type: "restaurant",
-    data: {
-      type: "F",
-      id: "42294",
-      name: "Udupi Palace",
-      uuid: "7e5fb1de-707b-4851-a0f7-a70df335efe2",
-      city: "1",
-      area: "HSR Layout",
-      totalRatingsString: "10000+ ratings",
-      cloudinaryImageId: "dbfp4mqtidbjh9sectlk",
-      cuisines: [
-        "Beverages",
-        "Biryani",
-        "Chinese",
-        "Desserts",
-        "North Indian",
-        "South Indian",
-      ],
-      tags: [],
-      costForTwo: 15000,
-      costForTwoString: "₹150 FOR TWO",
-      deliveryTime: 30,
-      minDeliveryTime: 30,
-      maxDeliveryTime: 30,
-      slaString: "30 MINS",
-      lastMileTravel: 5.599999904632568,
-      slugs: {
-        restaurant: "udupi-palace-00-hsr",
-        city: "bangalore",
-      },
-      cityState: "1",
-      address:
-        "No 1188 HNR tower 24th main second SECTOR HSR LAYOUT BANGALORE 560102",
-      locality: "2nd Sector",
-      parentId: 6971,
-      unserviceable: false,
-      veg: true,
-      select: false,
-      favorite: false,
-      tradeCampaignHeaders: [],
-      aggregatedDiscountInfo: {
-        header: "20% off",
-        shortDescriptionList: [
-          {
-            meta: "20% off | Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
+    {
+      info: {
+        id: "729504",
+        name: "Theobroma",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/8/14/5ec6f834-2e28-4330-885b-d76758dffce0_729504.JPG",
+        locality: "Raj Nagar Extension",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹400 for two",
+        cuisines: ["Bakery", "Desserts", "Beverages"],
+        avgRating: 4.6,
+        parentId: "1040",
+        avgRatingString: "4.6",
+        totalRatingsString: "608",
+        sla: {
+          deliveryTime: 14,
+          lastMileTravel: 1.8,
+          serviceability: "SERVICEABLE",
+          slaString: "10-15 mins",
+          lastMileTravelString: "1.8 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-02 23:59:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+            {
+              imageId: "Rxawards/_CATEGORY-Desserts.png",
+              description: "Delivery!",
+            },
+            {
+              imageId: "newg.png",
+              description: "Gourmet",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+                {
+                  attributes: {
+                    description: "Delivery!",
+                    imageId: "Rxawards/_CATEGORY-Desserts.png",
+                  },
+                },
+                {
+                  attributes: {
+                    description: "Gourmet",
+                    imageId: "newg.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
           },
-        ],
-        descriptionList: [
-          {
-            meta: "20% off up to ₹50 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
+        },
+        aggregatedDiscountInfoV3: {
+          header: "15% OFF",
+          discountTag: "FLAT DEAL",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
           },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
-      },
-      aggregatedDiscountInfoV2: {
-        header: "20% OFF",
-        shortDescriptionList: [
-          {
-            meta: "Use TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "58",
           },
-        ],
-        descriptionList: [
-          {
-            meta: "20% off up to ₹50 | Use code TRYNEW",
-            discountType: "Percentage",
-            operationType: "RESTAURANT",
-          },
-        ],
-        subHeader: "",
-        headerType: 0,
-        superFreedel: "",
+          source: "GOOGLE",
+          sourceIconImageId: "v1704440323/google_ratings/rating_google_tag",
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
       },
-      chain: [],
-      feeDetails: {
-        fees: [
-          {
-            name: "distance",
-            fee: 4900,
-            message: "",
-          },
-          {
-            name: "time",
-            fee: 0,
-            message: "",
-          },
-          {
-            name: "special",
-            fee: 0,
-            message: "",
-          },
-        ],
-        totalFees: 4900,
-        message: "",
-        title: "Delivery Charge",
-        amount: "4900",
-        icon: "",
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
       },
-      availability: {
-        opened: true,
-        nextOpenMessage: "",
-        nextCloseMessage: "",
+      cta: {
+        link: "https://www.swiggy.com/city/noida/theobroma-raj-nagar-extension-rest729504",
+        type: "WEBLINK",
       },
-      longDistanceEnabled: 0,
-      rainMode: "NONE",
-      thirdPartyAddress: false,
-      thirdPartyVendor: "",
-      adTrackingID: "",
-      badges: {
-        imageBased: [],
-        textBased: [],
-        textExtendedBadges: [],
-      },
-      lastMileTravelString: "5.5 kms",
-      hasSurge: false,
-      sla: {
-        restaurantId: "42294",
-        deliveryTime: 30,
-        minDeliveryTime: 30,
-        maxDeliveryTime: 30,
-        lastMileTravel: 5.599999904632568,
-        lastMileDistance: 0,
-        serviceability: "SERVICEABLE",
-        rainMode: "NONE",
-        longDistance: "NOT_LONG_DISTANCE",
-        preferentialService: false,
-        iconType: "EMPTY",
-      },
-      promoted: false,
-      avgRating: "4.2",
-      totalRatings: 10000,
-      new: false,
     },
-    subtype: "basic",
-  },
-];
-
-
-export default resList;
+    {
+      info: {
+        id: "686202",
+        name: "Chinese Wok",
+        cloudinaryImageId: "e0839ff574213e6f35b3899ebf1fc597",
+        locality: "Raj Nagar",
+        areaName: "VVIP Style Mall",
+        costForTwo: "₹250 for two",
+        cuisines: ["Chinese", "Asian", "Tibetan", "Desserts"],
+        avgRating: 4.1,
+        parentId: "61955",
+        avgRatingString: "4.1",
+        totalRatingsString: "1.7K+",
+        sla: {
+          deliveryTime: 28,
+          lastMileTravel: 1.3,
+          serviceability: "SERVICEABLE",
+          slaString: "25-30 mins",
+          lastMileTravelString: "1.3 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 01:00:00",
+          opened: true,
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {},
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹119",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/chinese-wok-raj-nagar-vvip-style-mall-rest686202",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "600948",
+        name: "BOX8 - Desi Meals",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/26/23534d06-0a15-49fc-9487-ea0e89c5eebd_600948.jpg",
+        locality: "Ramavtar Tyagi Ln",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹200 for two",
+        cuisines: ["North Indian", "Biryani", "Thalis", "Home Food"],
+        avgRating: 4.5,
+        parentId: "10655",
+        avgRatingString: "4.5",
+        totalRatingsString: "2.8K+",
+        sla: {
+          deliveryTime: 25,
+          lastMileTravel: 0.7,
+          serviceability: "SERVICEABLE",
+          slaString: "20-30 mins",
+          lastMileTravelString: "0.7 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 02:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹99",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/box8-desi-meals-ramavtar-tyagi-ln-raj-nagar-extension-rest600948",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "600952",
+        name: "NH1 Bowls - Highway To North",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/8/f4120f98-c761-4c1b-a88a-df66986019a5_600952.jpg",
+        locality: "Ramavtar Tyagi Ln",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹250 for two",
+        cuisines: ["North Indian", "Punjabi", "Home Food"],
+        avgRating: 4.7,
+        parentId: "22452",
+        avgRatingString: "4.7",
+        totalRatingsString: "1.4K+",
+        sla: {
+          deliveryTime: 25,
+          lastMileTravel: 0.7,
+          serviceability: "SERVICEABLE",
+          slaString: "20-30 mins",
+          lastMileTravelString: "0.7 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 02:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹99",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/nh1-bowls-highway-to-north-ramavtar-tyagi-ln-raj-nagar-extension-rest600952",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "740564",
+        name: "Hola Pasta - Fresh Gourmet Pasta",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/24/b31f5f40-c84a-4ddb-b91c-7de469c0d5d2_740564.JPG",
+        locality: "Ramavtar Tyagi Ln",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹250 for two",
+        cuisines: ["Pastas", "Italian", "Desserts", "Beverages"],
+        avgRating: 4.3,
+        parentId: "418135",
+        avgRatingString: "4.3",
+        totalRatingsString: "68",
+        sla: {
+          deliveryTime: 25,
+          lastMileTravel: 0.7,
+          serviceability: "SERVICEABLE",
+          slaString: "20-30 mins",
+          lastMileTravelString: "0.7 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 02:00:00",
+          opened: true,
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {},
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹109",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/hola-pasta-fresh-gourmet-pasta-ramavtar-tyagi-ln-raj-nagar-extension-rest740564",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "457303",
+        name: "Bakingo",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/9/11/6f896fd1-ec76-4508-b8de-7ca26580545b_457303.JPG",
+        locality: "sector 23",
+        areaName: "Raj Nagar",
+        costForTwo: "₹300 for two",
+        cuisines: ["Bakery", "Desserts", "Beverages", "Snacks"],
+        avgRating: 4.6,
+        parentId: "3818",
+        avgRatingString: "4.6",
+        totalRatingsString: "5.1K+",
+        sla: {
+          deliveryTime: 35,
+          lastMileTravel: 3.9,
+          serviceability: "SERVICEABLE",
+          slaString: "30-35 mins",
+          lastMileTravelString: "3.9 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 00:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "Rxawards/_CATEGORY-Desserts.png",
+              description: "Delivery!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "Delivery!",
+                    imageId: "Rxawards/_CATEGORY-Desserts.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "₹550 OFF",
+          subHeader: "ABOVE ₹2999",
+          discountTag: "FLAT DEAL",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/bakingo-sector-23-raj-nagar-rest457303",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "220321",
+        name: "Subway",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/12/2229e6bb-a4ab-47ae-bff2-0d7a34816368_220321.jpg",
+        locality: "C Block",
+        areaName: "Raj Nagar",
+        costForTwo: "₹350 for two",
+        cuisines: ["sandwich", "Salads", "wrap", "Healthy Food"],
+        avgRating: 4.4,
+        parentId: "2",
+        avgRatingString: "4.4",
+        totalRatingsString: "4.0K+",
+        sla: {
+          deliveryTime: 40,
+          lastMileTravel: 5.7,
+          serviceability: "SERVICEABLE",
+          slaString: "35-40 mins",
+          lastMileTravelString: "5.7 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 02:00:00",
+          opened: true,
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {},
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹119",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/subway-c-block-raj-nagar-rest220321",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "454201",
+        name: "KFC",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/3387462c-2b13-416f-85c5-7875bda6db1b_454201.JPG",
+        locality: "Raj Nagar Extension",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹400 for two",
+        cuisines: ["Burgers", "Fast Food", "Rolls & Wraps"],
+        avgRating: 4.3,
+        parentId: "547",
+        avgRatingString: "4.3",
+        totalRatingsString: "3.5K+",
+        sla: {
+          deliveryTime: 19,
+          lastMileTravel: 1.9,
+          serviceability: "SERVICEABLE",
+          slaString: "15-20 mins",
+          lastMileTravelString: "1.9 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 03:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+            {
+              imageId: "Rxawards/_CATEGORY-Burger.png",
+              description: "Delivery!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+                {
+                  attributes: {
+                    description: "Delivery!",
+                    imageId: "Rxawards/_CATEGORY-Burger.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹119",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "691",
+          },
+          source: "GOOGLE",
+          sourceIconImageId: "v1704440323/google_ratings/rating_google_tag",
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/kfc-raj-nagar-extension-rest454201",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "643865",
+        name: "WeFit - Protein Bowls, Salads & Sandwiches",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/2/3/9a65df03-38c4-4f48-b047-e8e4724dede3_643865.jpg",
+        locality: "Palm Drive Commercial",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹250 for two",
+        cuisines: ["Healthy Food", "Salads", "Keto", "Snacks"],
+        avgRating: 4.7,
+        parentId: "355285",
+        avgRatingString: "4.7",
+        totalRatingsString: "647",
+        sla: {
+          deliveryTime: 25,
+          lastMileTravel: 0.7,
+          serviceability: "SERVICEABLE",
+          slaString: "20-30 mins",
+          lastMileTravelString: "0.7 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 02:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "Ratnesh_Badges/Rx_Awards_2025/Healthy.png",
+              description: "Delivery!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "Delivery!",
+                    imageId: "Ratnesh_Badges/Rx_Awards_2025/Healthy.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹145",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/wefit-protein-bowls-salads-and-sandwiches-palm-drive-commercial-raj-nagar-extension-rest643865",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "600953",
+        name: "ZAZA Mughal Biryani",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/17/b319d3ad-e5d7-48d3-a05c-0ef5d3b50c99_600953.jpg",
+        locality: "Ramavtar Tyagi Ln",
+        areaName: "Raj Nagar",
+        costForTwo: "₹250 for two",
+        cuisines: ["Biryani", "North Indian", "Awadhi"],
+        avgRating: 4.5,
+        parentId: "22473",
+        avgRatingString: "4.5",
+        totalRatingsString: "1.1K+",
+        sla: {
+          deliveryTime: 25,
+          lastMileTravel: 0.7,
+          serviceability: "SERVICEABLE",
+          slaString: "20-30 mins",
+          lastMileTravelString: "0.7 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 02:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+            {
+              imageId: "Rxawards/_CATEGORY-Biryani.png",
+              description: "Delivery!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+                {
+                  attributes: {
+                    description: "Delivery!",
+                    imageId: "Rxawards/_CATEGORY-Biryani.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹99",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/zaza-mughal-biryani-ramavtar-tyagi-ln-raj-nagar-rest600953",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "750430",
+        name: "Daily Kitchen - Everyday Homely Meals",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/10/0f10ae5c-baea-4bde-936c-aedba9ad445a_750430.jpg",
+        locality: "Ramavtar Tyagi Ln",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹250 for two",
+        cuisines: ["Home Food", "Indian", "North Indian", "Thalis"],
+        avgRating: 4.5,
+        parentId: "444382",
+        avgRatingString: "4.5",
+        totalRatingsString: "1.2K+",
+        sla: {
+          deliveryTime: 25,
+          lastMileTravel: 0.7,
+          serviceability: "SERVICEABLE",
+          slaString: "20-30 mins",
+          lastMileTravelString: "0.7 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 02:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+            {
+              imageId: "Rxawards/_CATEGORY-North%20Indian.png",
+              description: "Delivery!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+                {
+                  attributes: {
+                    description: "Delivery!",
+                    imageId: "Rxawards/_CATEGORY-North%20Indian.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹99",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/daily-kitchen-everyday-homely-meals-ramavtar-tyagi-ln-raj-nagar-extension-rest750430",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "509008",
+        name: "Burger King",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/60080ae1-8e6b-40ab-8bf6-b77898156e04_509008.jpg",
+        locality: "Vvip Style Mall",
+        areaName: "Raj Nagar",
+        costForTwo: "₹350 for two",
+        cuisines: ["Burgers", "American"],
+        avgRating: 4.5,
+        parentId: "166",
+        avgRatingString: "4.5",
+        totalRatingsString: "7.3K+",
+        sla: {
+          deliveryTime: 17,
+          lastMileTravel: 1.3,
+          serviceability: "SERVICEABLE",
+          slaString: "15-20 mins",
+          lastMileTravelString: "1.3 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 04:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+            {
+              imageId: "Rxawards/_CATEGORY-Burger.png",
+              description: "Delivery!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+                {
+                  attributes: {
+                    description: "Delivery!",
+                    imageId: "Rxawards/_CATEGORY-Burger.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹39",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/burger-king-vvip-style-mall-raj-nagar-rest509008",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "336714",
+        name: "Domino's Pizza",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/8/8/b025e19f-965c-4fbb-8dcf-4c8c45d87e68_336714.JPG",
+        locality: "Noor Nagar",
+        areaName: "Raj Nagar",
+        costForTwo: "₹400 for two",
+        cuisines: ["Pizzas", "Italian", "Pastas", "Desserts"],
+        avgRating: 4.3,
+        parentId: "2456",
+        avgRatingString: "4.3",
+        totalRatingsString: "3.9K+",
+        sla: {
+          deliveryTime: 25,
+          lastMileTravel: 1.2,
+          serviceability: "SERVICEABLE",
+          slaString: "20-25 mins",
+          lastMileTravelString: "1.2 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-02 23:59:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹59",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/dominos-pizza-noor-nagar-raj-nagar-rest336714",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "854843",
+        name: "Hong's Kitchen - Hearty! Tasty! Chinese!",
+        cloudinaryImageId: "3221231e6bc58963db9c81f5c021e883",
+        locality: "Noor Nagar",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹250 for two",
+        cuisines: ["Chinese", "Asian", "Tibetan"],
+        avgRating: 4.2,
+        parentId: "9547",
+        avgRatingString: "4.2",
+        totalRatingsString: "1.0K+",
+        sla: {
+          deliveryTime: 30,
+          lastMileTravel: 0.1,
+          serviceability: "SERVICEABLE",
+          slaString: "20-30 mins",
+          lastMileTravelString: "0.1 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 01:00:00",
+          opened: true,
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {},
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹59",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/hongs-kitchen-hearty-tasty-chinese-noor-nagar-raj-nagar-extension-rest854843",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "703870",
+        name: "Grameen Kulfi",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/5/16/8afc6913-91f4-4c86-bbcc-e3484cf339bd_703870.jpg",
+        locality: "Aura Plaza",
+        areaName: "Raj Nagar",
+        costForTwo: "₹120 for two",
+        cuisines: ["Ice Cream", "Desserts"],
+        avgRating: 4.9,
+        veg: true,
+        parentId: "12175",
+        avgRatingString: "4.9",
+        totalRatingsString: "206",
+        sla: {
+          deliveryTime: 19,
+          lastMileTravel: 0.2,
+          serviceability: "SERVICEABLE",
+          slaString: "15-20 mins",
+          lastMileTravelString: "0.2 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 00:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/rx_5_10_min.png",
+              description: "bolt!",
+            },
+            {
+              imageId: "v1695133679/badges/Pure_Veg111.png",
+              description: "pureveg",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/rx_5_10_min.png",
+                  },
+                },
+                {
+                  attributes: {
+                    description: "pureveg",
+                    imageId: "v1695133679/badges/Pure_Veg111.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹148",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/grameen-kulfi-aura-plaza-raj-nagar-rest703870",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "60641",
+        name: "Hira Sweets",
+        cloudinaryImageId: "eofyjfawwx8dt7qvsrr2",
+        locality: "Raj Nagar",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹500 for two",
+        cuisines: [
+          "South Indian",
+          "Chinese",
+          "Continental",
+          "Bakery",
+          "Street Food",
+          "Sweets",
+          "Desserts",
+          "Beverages",
+        ],
+        avgRating: 4.4,
+        parentId: "5155",
+        avgRatingString: "4.4",
+        totalRatingsString: "26K+",
+        sla: {
+          deliveryTime: 30,
+          lastMileTravel: 1.3,
+          serviceability: "SERVICEABLE",
+          slaString: "30-35 mins",
+          lastMileTravelString: "1.3 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-02 23:59:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "Rxawards/_CATEGORY-Mithai.png",
+              description: "Delivery!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "Delivery!",
+                    imageId: "Rxawards/_CATEGORY-Mithai.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹39",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "4.0",
+            ratingCount: "4.6K+",
+          },
+          source: "GOOGLE",
+          sourceIconImageId: "v1704440323/google_ratings/rating_google_tag",
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/hira-sweets-raj-nagar-raj-nagar-extension-rest60641",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "681647",
+        name: "LeanCrust Pizza- ThinCrust Experts",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2024/8/30/9740c3c7-afe1-48f8-9a7f-9c69860a98f3_681647.jpg",
+        locality: "Ramavtar Tyagi Ln",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹300 for two",
+        cuisines: ["Pizzas", "Italian", "Desserts"],
+        avgRating: 4.6,
+        parentId: "11216",
+        avgRatingString: "4.6",
+        totalRatingsString: "1.0K+",
+        sla: {
+          deliveryTime: 25,
+          lastMileTravel: 0.7,
+          serviceability: "SERVICEABLE",
+          slaString: "20-30 mins",
+          lastMileTravelString: "0.7 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 02:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+          ],
+          textExtendedBadges: [
+            {
+              iconId: "guiltfree/GF_Logo_android_3x",
+              shortDescription: "options available",
+              fontColor: "#7E808C",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "",
+                    fontColor: "#7E808C",
+                    iconId: "guiltfree/GF_Logo_android_3x",
+                    shortDescription: "options available",
+                  },
+                },
+              ],
+            },
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹99",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/leancrust-pizza-thincrust-experts-ramavtar-tyagi-ln-raj-nagar-extension-rest681647",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "678835",
+        name: "Barista Coffee",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/7/4/4c10f49b-3437-4505-a745-aa1aca53855b_678835.JPG",
+        locality: "Rajnagar Extension",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹600 for two",
+        cuisines: [
+          "Beverages",
+          "Fast Food",
+          "Snacks",
+          "Biryani",
+          "Pastas",
+          "Desserts",
+        ],
+        avgRating: 4.6,
+        parentId: "416281",
+        avgRatingString: "4.6",
+        totalRatingsString: "102",
+        sla: {
+          deliveryTime: 32,
+          lastMileTravel: 2.1,
+          serviceability: "SERVICEABLE",
+          slaString: "30-35 mins",
+          lastMileTravelString: "2.1 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-02 20:30:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+            {
+              imageId: "Rxawards/_CATEGORY-Cafe%20&%20Chai.png",
+              description: "Delivery!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+                {
+                  attributes: {
+                    description: "Delivery!",
+                    imageId: "Rxawards/_CATEGORY-Cafe%20&%20Chai.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹190",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "4.0",
+            ratingCount: "22",
+          },
+          source: "GOOGLE",
+          sourceIconImageId: "v1704440323/google_ratings/rating_google_tag",
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/barista-coffee-rajnagar-extension-raj-nagar-extension-rest678835",
+        type: "WEBLINK",
+      },
+    },
+    {
+      info: {
+        id: "692259",
+        name: "BOOM - Sub Style Sandwiches",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/24/69ef305e-bfcb-472c-87e0-2e93a1b124ec_692259.JPG",
+        locality: "Ramavtar Tyagi Ln",
+        areaName: "Raj Nagar Extension",
+        costForTwo: "₹250 for two",
+        cuisines: ["Snacks", "Indian", "Desserts"],
+        avgRating: 4.4,
+        parentId: "401169",
+        avgRatingString: "4.4",
+        totalRatingsString: "314",
+        sla: {
+          deliveryTime: 25,
+          lastMileTravel: 0.7,
+          serviceability: "SERVICEABLE",
+          slaString: "20-30 mins",
+          lastMileTravelString: "0.7 km",
+          iconType: "ICON_TYPE_EMPTY",
+        },
+        availability: {
+          nextCloseTime: "2025-10-03 02:00:00",
+          opened: true,
+        },
+        badges: {
+          imageBadges: [
+            {
+              imageId: "android/static-assets/icons/big_rx.png",
+              description: "bolt!",
+            },
+          ],
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+          entityBadges: {
+            imageBased: {
+              badgeObject: [
+                {
+                  attributes: {
+                    description: "bolt!",
+                    imageId: "android/static-assets/icons/big_rx.png",
+                  },
+                },
+              ],
+            },
+            textBased: {},
+            textExtendedBadges: {},
+          },
+        },
+        aggregatedDiscountInfoV3: {
+          header: "ITEMS",
+          subHeader: "AT ₹99",
+        },
+        differentiatedUi: {
+          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          differentiatedUiMediaDetails: {
+            lottie: {},
+            video: {},
+          },
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+          aggregatedRating: {
+            rating: "--",
+          },
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      },
+      analytics: {
+        context: "seo-data-5f1a3302-7fd1-4e7d-afb5-f5f2b0c93147",
+      },
+      cta: {
+        link: "https://www.swiggy.com/city/noida/boom-sub-style-sandwiches-ramavtar-tyagi-ln-raj-nagar-extension-rest692259",
+        type: "WEBLINK",
+      },
+    },
+  ],
+};
